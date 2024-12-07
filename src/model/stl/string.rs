@@ -4,7 +4,7 @@ use std::os::raw::c_char;
 
 use libc::size_t;
 
-use super::bindings::root::std::string;
+use crate::bindings::std::__1::string;
 
 cpp! {{
     #include <string>

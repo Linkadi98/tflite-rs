@@ -1,6 +1,7 @@
+
 #![allow(clippy::transmute_num_to_bytes)]
-use std::ops::{Deref, DerefMut};
 use std::{fmt, mem};
+use std::ops::{Deref, DerefMut};
 
 use crate::model::stl::memory::UniquePtr;
 
@@ -47,11 +48,13 @@ impl DerefMut for UniquePtr<crate::model::OperatorCodeT> {
 }
 
 #[allow(deprecated)]
-impl fmt::Debug for UniquePtr<crate::model::OperatorCodeT> {
+impl fmt::Debug for UniquePtr<crate::model::OperatorCodeT>
+{
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         write!(f, "({:?})", self.deref())
     }
 }
+
 
 #[allow(deprecated)]
 impl Default for UniquePtr<crate::model::TensorT> {
@@ -96,11 +99,13 @@ impl DerefMut for UniquePtr<crate::model::TensorT> {
 }
 
 #[allow(deprecated)]
-impl fmt::Debug for UniquePtr<crate::model::TensorT> {
+impl fmt::Debug for UniquePtr<crate::model::TensorT>
+{
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         write!(f, "({:?})", self.deref())
     }
 }
+
 
 #[allow(deprecated)]
 impl Default for UniquePtr<crate::model::OperatorT> {
@@ -145,11 +150,13 @@ impl DerefMut for UniquePtr<crate::model::OperatorT> {
 }
 
 #[allow(deprecated)]
-impl fmt::Debug for UniquePtr<crate::model::OperatorT> {
+impl fmt::Debug for UniquePtr<crate::model::OperatorT>
+{
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         write!(f, "({:?})", self.deref())
     }
 }
+
 
 #[allow(deprecated)]
 impl Default for UniquePtr<crate::model::SubGraphT> {
@@ -194,11 +201,13 @@ impl DerefMut for UniquePtr<crate::model::SubGraphT> {
 }
 
 #[allow(deprecated)]
-impl fmt::Debug for UniquePtr<crate::model::SubGraphT> {
+impl fmt::Debug for UniquePtr<crate::model::SubGraphT>
+{
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         write!(f, "({:?})", self.deref())
     }
 }
+
 
 #[allow(deprecated)]
 impl Default for UniquePtr<crate::model::BufferT> {
@@ -243,11 +252,13 @@ impl DerefMut for UniquePtr<crate::model::BufferT> {
 }
 
 #[allow(deprecated)]
-impl fmt::Debug for UniquePtr<crate::model::BufferT> {
+impl fmt::Debug for UniquePtr<crate::model::BufferT>
+{
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         write!(f, "({:?})", self.deref())
     }
 }
+
 
 #[allow(deprecated)]
 impl Default for UniquePtr<crate::model::QuantizationParametersT> {
@@ -292,11 +303,13 @@ impl DerefMut for UniquePtr<crate::model::QuantizationParametersT> {
 }
 
 #[allow(deprecated)]
-impl fmt::Debug for UniquePtr<crate::model::QuantizationParametersT> {
+impl fmt::Debug for UniquePtr<crate::model::QuantizationParametersT>
+{
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         write!(f, "({:?})", self.deref())
     }
 }
+
 
 #[allow(deprecated)]
 impl Default for UniquePtr<crate::model::ModelT> {
@@ -341,11 +354,13 @@ impl DerefMut for UniquePtr<crate::model::ModelT> {
 }
 
 #[allow(deprecated)]
-impl fmt::Debug for UniquePtr<crate::model::ModelT> {
+impl fmt::Debug for UniquePtr<crate::model::ModelT>
+{
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         write!(f, "({:?})", self.deref())
     }
 }
+
 
 #[allow(deprecated)]
 impl Default for UniquePtr<crate::model::MetadataT> {
@@ -390,8 +405,11 @@ impl DerefMut for UniquePtr<crate::model::MetadataT> {
 }
 
 #[allow(deprecated)]
-impl fmt::Debug for UniquePtr<crate::model::MetadataT> {
+impl fmt::Debug for UniquePtr<crate::model::MetadataT>
+{
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         write!(f, "({:?})", self.deref())
     }
 }
+
+
