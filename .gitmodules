@@ -1,6 +1,7 @@
 [submodule "submodules/tensorflow"]
 	path = submodules/tensorflow
-	url = https://github.com/tensorflow/tensorflow.git
+	url = https://github.com/Linkadi98/tensorflow.git
+	branch = tensorflow/1.15.5-rs
 [submodule "submodules/downloads"]
 	path = submodules/downloads
 	url = https://github.com/boncheolgu/tflite-rs-downloads
